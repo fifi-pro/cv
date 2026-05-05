@@ -1,0 +1,210 @@
+/*Paleta de colores
+   #7a4f2e → Marrón oscuro (principal)
+   #f3e9dd → Crema claro (menú y tarjetas)
+   #faf6f0 → Fondo general de la página
+   #3b2f2f → Texto principal
+*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', 'Lato', sans-serif;
+    background: #faf6f0;
+    color: #3b2f2f;
+}
+
+/* Menú superior*/
+.accesos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    padding: 20px 0;
+    background: #f3e9dd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.opcion {
+    background: #faf6f0;
+    border: 3px solid #7a4f2e;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #3b2f2f;
+    transition: all 0.25s;
+}
+
+.opcion:hover {
+    transform: translateY(-3px);
+    background: #e8dccb;
+    border-color: #5c3a1e;
+}
+
+/* Layout principal (Grid) */
+.base_index {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    gap: 2%;
+    width: 80%;
+    margin: 40px auto;
+    height: 85%;
+    align-items: center;
+}
+
+/* Imagen 0  */
+.imagen img {
+    width: 100%;
+    border: 4px solid #7a4f2e;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Contenido derecho */
+.derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Textos */
+.presen h1, .presen_index h1 {
+    font-size: 40px;
+    margin: 0;
+    color: #7a4f2e;
+}
+
+.presen h2, .presen_index h2 {
+    font-size: 28px;
+    margin: 0 0 10px 0;
+    color: #7a4f2e;
+}
+
+.presen p, .presen_index p {
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+.fecha {
+    color: #a67c52;
+    font-weight: bold;
+}
+
+/* Grids */
+.tarjetas-experiencia, .resumen-grid {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 4%;
+}
+
+.competencias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 30%));
+    gap: 20px;
+}
+
+/* Barras de progreso */
+.bar {
+    height: 20px;
+    background: #e8dccb;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.bar span {
+    display: block;
+    height: 100%;
+    background: #7a4f2e;
+}
+
+/* Tarjetas */
+.tarjeta {
+    background: #f3e9dd;
+    padding: 20px;
+    border: 3px solid #7a4f2e;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #3b2f2f;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.tarjeta:hover {
+    background: #e8dccb;
+    transform: scale(1.03);
+}
+
+/*Footer*/
+.footer {
+    background: #f3e9dd;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sociales {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.sociales img {
+    width: 40px;
+    transition: transform 0.3s;
+}
+
+.sociales img:hover {
+    transform: scale(1.2);
+}
+
+/*Formulario*/
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.formulario label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3b2f2f;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 12px;
+    border: 2px solid #7a4f2e;
+    border-radius: 8px;
+    background: #faf6f0;
+    font-size: 16px;
+    outline: none;
+}
+
+.formulario textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.formulario button {
+    align-self: flex-start;
+    padding: 12px 28px;
+    background: #7a4f2e;
+    color: #faf6f0;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.formulario button:hover {
+    background: #5c3a1e;
+}
